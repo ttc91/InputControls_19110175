@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/chocolates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_wide"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/chocolate_syrup" />
+
+        <CheckBox
+            android:id="@+id/sprinkles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/sprinkles" />
+
+        <CheckBox
+            android:id="@+id/crushed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/crushed_nuts" />
+
+        <CheckBox
+            android:id="@+id/cherries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/cherries" />
+
+        <CheckBox
+            android:id="@+id/orio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckBoxClicked"
+            android:text="@string/orio" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SHOW TOAST"
+        android:onClick="displayToast"
+        app:layout_constraintTop_toBottomOf="@+id/orio"
+        app:layout_constraintStart_toStartOf="@+id/orio"/>
+
+
+
+
+</LinearLayout>
